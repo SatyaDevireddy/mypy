@@ -5,6 +5,13 @@ from azure.core.credentials import AzureKeyCredential
 from azure.keyvault.secrets import SecretClient
 from azure.identity import ClientSecretCredential
 
+def func(x):
+    return x + 1
+
+
+def test_answer():
+    assert func(3) == 5
+
 
 def main():
     global ai_endpoint
